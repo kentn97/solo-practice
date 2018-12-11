@@ -6324,6 +6324,20 @@ a.text-dark:hover, a.text-dark:focus {
         White:               #fff
         Black:               #000   
 ============================================ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.space {
+  padding: 100rem; }
+
 .preloader {
   background-color: #fff;
   position: fixed;
@@ -6335,3 +6349,21 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .preloader__status {
+    display: block; }
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover; }
+  .bg-video__overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%; }
