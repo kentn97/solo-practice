@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="en">
 
 <head>
 
@@ -25,40 +25,72 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
-    <!-- custom CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
+
+    <!-- Responsive Tabs CSS -->
+    <link rel="stylesheet" href="css/responsive-tabs/responsive-tabs.min.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate/animate.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
 
 </head>
 
 <body>
 
-    <div class="preloader">
-        <img src="img/preloader/preloader.gif" alt="placeholder" class="preloader__status">
-    </div>
+    <!-- Home -->
+    <section id="home">
 
-    <section class="home">
-        <video class="home__video" poster="video/solo.jpg" autoplay muted loop>
+        <!-- Background Video -->
+        <video id="home-bg-video" poster="video/solo.jpg" autoplay loop muted>
             <source src="video/solo.mp4" type="video/mp4">
             <source src="video/solo.ogv" type="video/ogg">
             <source src="video/solo.webm" type="video/webm">
         </video>
 
-        <div class="home__video-overlay"></div>
+        <!-- Overlay -->
+        <div id="home-overlay"></div>
 
-        <div class="home__content text-center">
-            <h1 class="home__heading">Digital Creative <span>Agency</span></h1>
-            <p class="home__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in nihil minima unde qui nihil minima.</p>
-            <a href="#about" title="Start Now" class="btn btn-general btn-home" role="button">Start Now</a>
+        <!-- Home Content -->
+        <div id="home-content">
+
+            <div id="home-content-inner" class="text-center">
+
+                <div id="home-heading">
+                    <h1 id="home-heading-1">Digital</h1><br>
+                    <h1 id="home-heading-2">Creative <span>Agency</span></h1>
+                </div>
+
+                <div id="home-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in nihil minima unde qui nihil minima.</p>
+                </div>
+
+                <div id="home-btn">
+                    <a class="btn btn-general btn-home smooth-scroll" href="#about" title="Start Now" role="button">Start Now</a>
+                </div>
+
+            </div>
+
         </div>
 
-        <a href="#about" class="home__arrow-down smooth-scroll">
+        <!-- Arrow Down -->
+        <a href="#about" id="arrow-down" class="smooth-scroll">
             <i class="fa fa-angle-down"></i>
         </a>
+
     </section>
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/custom.js"></script>
-</body>
+    <!-- Home Ends -->
